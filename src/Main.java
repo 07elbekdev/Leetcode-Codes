@@ -40,7 +40,7 @@ public class Main {
         int r, sum = 0, temp;
         //It is the number variable to be checked for palindrome
 
-                temp = x;
+        temp = x;
         while (x > 0) {
             r = x % 10;  //getting remainder
             sum = (sum * 10) + r;
