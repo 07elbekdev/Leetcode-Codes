@@ -1,6 +1,5 @@
 package removeElement;
 
-
 import java.util.ArrayList;
 
 public class RemoveElementWithTreeMap {
@@ -17,7 +16,6 @@ public class RemoveElementWithTreeMap {
                 arrayList.add(nums[i]);
             }
         }
-
         return arrayList.size();
     }
 }
