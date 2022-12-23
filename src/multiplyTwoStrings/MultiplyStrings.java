@@ -1,5 +1,7 @@
 package multiplyTwoStrings;
 
+import java.math.BigInteger;
+
 public class MultiplyStrings {
     public static void main(String[] args) {
         String a = "6913259249";//here will multiply String by numbers even they are large.
@@ -8,9 +10,10 @@ public class MultiplyStrings {
     }
 
     public static String multiply(String num1, String num2) {
-        long i = Integer.parseInt(num1);
-        long j = Integer.parseInt(num2);
-        String result = (String.valueOf(i * j));
-        return (String.valueOf(result));
+        BigInteger number1 = new BigInteger(num1);
+        BigInteger number2 = new BigInteger(num2);
+        BigInteger mulpitle = number1.multiply(number2);
+        String
+        return (result);
     }
 }
