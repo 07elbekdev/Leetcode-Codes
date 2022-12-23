@@ -13,9 +13,8 @@ public class MultiplyStrings {
 
         BigInteger number1 = new BigInteger(num1);
         BigInteger number2 = new BigInteger(num2);
-        BigInteger mulpitle = number1.multiply(number2);
-        String result = mulpitle.toString();
+        BigInteger multiply = number1.multiply(number2);
 
-        return (result);
+        return (multiply.toString());
     }
 }
