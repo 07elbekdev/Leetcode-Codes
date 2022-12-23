@@ -9,9 +9,8 @@ public class PlusOne {
     }
 
     public static int[] plusOne(int[] digits) {
-        int[]a = {9};
-        for (int num:a) {
-            System.out.println(num);
+        for (int arr:digits) {
+            System.out.println(arr+1);
         }
         return null ;
     }
