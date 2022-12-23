@@ -2,11 +2,12 @@ package multiplyTwoStrings;
 
 public class MultiplyStrings {
     public static void main(String[] args) {
-        String num1 = "3";
-        String num2 = "2";
-        System.out.println(multiply(num1.intern(),num2.intern()));
+        int num1 = 3;
+        int num2 = 2;
+        System.out.println(multiply(num1,num2));
     }
-        public static String multiply(String num1, String num2) {
-
+        public static String multiply(int num1, int num2) {
+        String str = String.valueOf(num2*num1);
+           return str;
         }
     }
