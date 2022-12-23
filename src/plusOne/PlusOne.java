@@ -8,8 +8,8 @@ public class PlusOne {
 
     public static int[] plusOne(int[] digits) {
 
-        for (int i = 0; i < digits.length; i++) {
-            digits[i]+=1;
+        for (int something:digits) {
+            System.out.println(something);
         }
 
         return digits;
