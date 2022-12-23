@@ -9,11 +9,10 @@ public class PlusOne {
     }
 
     public static int[] plusOne(int[] digits) {
-        for (int i = 0; i < ; i++) {
-
-        Integer.sum(digits,1);
+        int[]a = {9};
+        for (int num:a) {
+            System.out.println(num);
         }
-        }
-        return null;
+        return null ;
     }
 }
