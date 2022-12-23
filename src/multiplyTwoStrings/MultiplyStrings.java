@@ -7,9 +7,9 @@ public class MultiplyStrings {
         System.out.println(multiply(a,b));
     }
     public static String multiply(String num1, String num2) {
-        long a = Long.parseLong(String.valueOf(num1));
-        long b = Long.parseLong(String.valueOf(num2));
-            String result = String.valueOf(Integer.parseUnsignedInt(num1)*Integer.parseUnsignedInt(num2));
-        return result;
+        long i = Integer.parseInt(num1);
+        long j = Integer.parseInt(num2);
+            String result = String.valueOf(i*j);
+        return (String.valueOf(result));
     }
 }
