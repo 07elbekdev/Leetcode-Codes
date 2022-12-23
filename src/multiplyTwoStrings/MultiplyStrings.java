@@ -1,7 +1,5 @@
 package multiplyTwoStrings;
 
-import java.util.Scanner;
-
 public class MultiplyStrings {
     public static void main(String[] args) {
         String a = "123456789";
@@ -9,7 +7,9 @@ public class MultiplyStrings {
         System.out.println(multiply(a,b));
     }
     public static String multiply(String num1, String num2) {
-
-        return String.valueOf(Integer.parseInt(num1)*Integer.parseInt(num2));
+        long a = Long.parseLong(String.valueOf(num1));
+        long b = Long.parseLong(String.valueOf(num2));
+            String result = String.valueOf(Integer.parseUnsignedInt(num1)*Integer.parseUnsignedInt(num2));
+        return result;
     }
 }
