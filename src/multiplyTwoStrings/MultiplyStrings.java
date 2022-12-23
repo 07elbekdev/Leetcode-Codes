@@ -10,10 +10,12 @@ public class MultiplyStrings {
     }
 
     public static String multiply(String num1, String num2) {
+
         BigInteger number1 = new BigInteger(num1);
         BigInteger number2 = new BigInteger(num2);
         BigInteger mulpitle = number1.multiply(number2);
-        String
+        String result = mulpitle.toString();
+
         return (result);
     }
 }
