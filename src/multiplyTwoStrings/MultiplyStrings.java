@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 public class MultiplyStrings {
     public static void main(String[] args) {
-        String a = "6913259249";//here will multiply String by numbers even they are large.
+        String a = "6913259249";//here will multiply two Strings by number, even they are large.
         String b = "7110334989";
         System.out.println(multiply(a, b));
     }
