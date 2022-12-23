@@ -7,12 +7,11 @@ public class PlusOne {
     }
 
     public static int[] plusOne(int[] digits) {
-        for (int i = 0; i < digits.length; i++) {
-            digits[i] += 1;
-        }
+
+        di
         for (int as : digits) {
             System.out.println(as);
         }
-        return null;
+        return new int[]{0};
     }
 }
