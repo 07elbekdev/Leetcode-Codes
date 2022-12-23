@@ -7,7 +7,6 @@ public class MultiplyStrings {
         System.out.println(multiply(num1,num2));
     }
         public static String multiply(int num1, int num2) {
-        String str = String.valueOf(num2*num1);
-           return str;
+            return String.valueOf(num2*num1);
         }
     }
