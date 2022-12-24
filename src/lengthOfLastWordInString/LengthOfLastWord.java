@@ -10,6 +10,12 @@ public class LengthOfLastWord {
 
     public static int lengthOfLastWord(String s) {
         int count = 0;
-        return 0;
+        String[] str = s.split(" ");
+        if (str.length > 0) {
+            count = str[str.length-1].length();
+        }else{
+            count=0;
+        }
+        return count;
     }
 }
