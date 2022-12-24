@@ -11,10 +11,13 @@ public class MultiplyStrings {
 
     public static String multiply(String num1, String num2) {
 
-        BigInteger number1 = new BigInteger(num1);
-        BigInteger number2 = new BigInteger(num2);
-        BigInteger multiply = number1.multiply(number2);
+          long i = Long.parseLong(String.valueOf(num1));
+          long j = Long.parseLong(String.valueOf(num2));
 
-        return (multiply.toString());
+//        BigInteger number1 = new BigInteger(num1);
+//        BigInteger number2 = new BigInteger(num2);
+//        BigInteger multiply = number1.multiply(number2);
+//
+//        return (multiply.toString());
     }
 }
