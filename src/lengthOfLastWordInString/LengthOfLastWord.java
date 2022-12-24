@@ -1,10 +1,8 @@
 package lengthOfLastWordInString;
 
-import java.util.Arrays;
-
 public class LengthOfLastWord {
     public static void main(String[] args) {
-        String word = "Hello World";
+        String word = "Hello World my name is Marlen";
         System.out.println(lengthOfLastWord(word));
     }
 
