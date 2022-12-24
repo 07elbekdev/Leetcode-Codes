@@ -13,7 +13,7 @@ public class MultiplyStrings {
 
           long i = Long.parseLong(String.valueOf(num1));
           long j = Long.parseLong(String.valueOf(num2));
-
+          String result = String.valueOf(i+j);
 //        BigInteger number1 = new BigInteger(num1);
 //        BigInteger number2 = new BigInteger(num2);
 //        BigInteger multiply = number1.multiply(number2);
