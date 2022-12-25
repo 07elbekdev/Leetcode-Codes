@@ -1,17 +1,19 @@
 package plusOne;
 
-import java.util.Arrays;
-
 public class PlusOne {
+
     public static void main(String[] args) {
-        int[] number = {1, 9, 9, 9};
-        System.out.println(Arrays.toString(plusOne(number)));
+        int[]arr = {1,9,9,9};
+        System.out.println(plusOne(arr));
     }
 
     public static int[] plusOne(int[] digits) {
-        for (int arr:digits) {
-            System.out.println(arr+1);
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int num : digits) {
+            stringBuilder.append(num);
         }
-        return null ;
+        int transform = Integer.parseInt(stringBuilder.toString());
+        int result = transform+1;
+        return new int[result];
     }
 }
