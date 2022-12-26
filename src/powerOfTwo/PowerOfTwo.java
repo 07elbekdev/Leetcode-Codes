@@ -8,13 +8,16 @@ public class PowerOfTwo {
     }
 
     public static boolean isPowerOfTwo(int n) {
-        while (n % 2 == 0) {
-            n = n / 2;
-        }
-        if (n == 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return n > 0 && Integer.bitCount(n) == 1;//and we can also use this it absolutely works.
     }
 }
+//        while (n % 2 == 0) {
+//            n = n / 2;
+//        }
+//        if (n == 1) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+//    }
+//}
