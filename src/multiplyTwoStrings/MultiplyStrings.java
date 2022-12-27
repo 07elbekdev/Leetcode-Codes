@@ -14,7 +14,7 @@ public class MultiplyStrings {
         BigInteger number1 = new BigInteger(num1);
         BigInteger number2 = new BigInteger(num2);
         BigInteger multiply = number1.multiply(number2);
-
+        
         return (multiply.toString());
     }
 }
