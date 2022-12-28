@@ -8,21 +8,19 @@ public class ThirdMaximum {
         int[] maximum = {2, 2, 3, 1};
         System.out.println(thirdMax(maximum));
     }
+            public static int thirdMax(int[] nums) {
+                Arrays.sort(nums,0,nums.length);
 
-    public static int thirdMax(int[] nums) {
-        HashSet<Integer> array = new HashSet<>();
-        Arrays.sort(nums);
-        if (nums.length >= 2) {
-            return Math.max(nums[0], nums[1]);
-        }
-        for (int i = 0; i < nums.length; i++) {
-                array.add(nums[i]);
-                System.out.println(nums[i]);
-
-                if (i == nums.length - 3) {
-                    return nums[i];
+                int count=0;
+                int max=nums[nums.length-1];
+                for(int i=nums.length-2;i>=0;i--)   {
+                    if(count==2)    break;
+                    if(nums[i]<max) {
+                        count++;
+                        max=nums[i];
+                    }
                 }
+                if(count==2)    return max;
+                return nums[nums.length-1];
             }
-        return 0;
-    }
-}
+        }
