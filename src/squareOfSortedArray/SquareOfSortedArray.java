@@ -9,9 +9,7 @@ public class SquareOfSortedArray {
     }
 
     public static int[] sortedSquares(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] *= nums[i];
-        }
-        return Arrays.stream(nums).sorted().toArray();
+
+        return Arrays.stream(nums).map(i -> i*i).sorted().toArray();
     }
 }
