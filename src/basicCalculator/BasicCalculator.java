@@ -10,7 +10,6 @@ public class BasicCalculator {
     }
         public static int calculate(String s){
            int result = Integer.parseInt(s);
-           int real = result+1;
-           return real;
+            return result+1;
         }
     }
