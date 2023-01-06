@@ -6,10 +6,17 @@ public class ReverseStrings {
         System.out.println(reverseWords(a));
     }
 
-    public static String reverseWords(String s) {
-        char[] some = s.toCharArray();
-        StringBuilder a = new StringBuilder(some.length);
-        a.reverse();
-        return a.toString();
+    public static String reverseWords(String a){
+        StringBuilder st = new StringBuilder();
+        String [] StringArr = a.split(" ");
+        for (int i = 0; i < StringArr.length; i++) {
+            char [] d = StringArr[i].toCharArray();
+            int aLength = d.length-1;
+            while (aLength>=0){
+                st.append(d[aLength--]);
+            }
+            st.append(" ");
+        }
+        return st.toString().trim();
     }
 }
