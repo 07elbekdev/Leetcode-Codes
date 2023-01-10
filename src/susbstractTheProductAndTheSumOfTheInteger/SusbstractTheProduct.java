@@ -1,5 +1,7 @@
 package susbstractTheProductAndTheSumOfTheInteger;
 
+import java.util.Arrays;
+
 public class SusbstractTheProduct {
     public static void main(String[] args) {
         int number = 234;
@@ -8,6 +10,6 @@ public class SusbstractTheProduct {
 
     public static int subtractProductAndSum(int n) {
 
-        return n;
+        return 8;
     }
 }
