@@ -1,5 +1,6 @@
 package sortTheArray;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SortTheArray {
@@ -11,23 +12,6 @@ public class SortTheArray {
         for (int i = 0; i < array.length; i++) {
             array[i] = in.nextInt();
         }
-        sortColors(array);
-    }
-
-    public static void sortColors(int[] nums) {
-        int temp = 0;
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums.length; j++) {
-                if (nums[i] < nums[j]) {
-                    temp = nums[i];
-                    nums[i] = nums[j];
-                    nums[j] = temp;
-                }
-            }
-        }
-
-        for (int a : nums) {
-            System.out.print(a + " ");
-        }
+        Arrays.stream(array).sorted().forEach(System.out::println);
     }
 }

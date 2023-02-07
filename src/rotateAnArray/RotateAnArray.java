@@ -13,7 +13,7 @@ public class RotateAnArray {
             numbers[(i + k) % nums.length] = nums[i];
         }
         for (int i = 0; i < numbers.length; i++) {
-            nums[i] = numbers[i];
+            System.out.println(nums[i] = numbers[i]);
         }
     }
 }
